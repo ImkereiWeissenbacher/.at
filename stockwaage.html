@@ -3,11 +3,18 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Stockwaage - Imkerei Weissenbacher</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Produkte - Imkerei Weissenbacher</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7Rxnatzjc5pxSGFJ5MBlrJ66FkjIWHMcB6ah5mZPv6o" crossorigin="anonymous">
     <style>
         body {
             background-color: #fff8dc; /* Hellgelb */
+        }
+        .price-table {
+            width: 70%;
+            margin: 0 auto;
+        }
+        .price-table th {
+            background-color: #f8f9fa; /* Hellgrau */
         }
     </style>
 </head>
@@ -23,10 +30,10 @@
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="produkte.html">Produkte</a>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="stockwaage.html">Stockwaage</a>
                     </li>
                     <li class="nav-item">
@@ -41,11 +48,145 @@
     </nav>
     
     <div class="container mt-5">
-        <h2>Stockwaage</h2>
-        <p>Hier finden Sie Informationen zur Stockwaage in unserer Imkerei.</p>
-        <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/1467780/widgets/355376"></iframe>
+        <h2>Unsere Produkte</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="akazienhonig.jpg" class="card-img-top" alt="Akazienhonig">
+                    <div class="card-body">
+                        <h5 class="card-title">Akazienhonig</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="lindenbluetenhonig.jpg" class="card-img-top" alt="Lindenblütenhonig">
+                    <div class="card-body">
+                        <h5 class="card-title">Lindenblütenhonig</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="sonnenblumenhonig.jpg" class="card-img-top" alt="Sonnenblumenhonig">
+                    <div class="card-body">
+                        <h5 class="card-title">Sonnenblumenhonig</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="kastanienhonig.jpg" class="card-img-top" alt="Kastanienhonig">
+                    <div class="card-body">
+                        <h5 class="card-title">Kastanienhonig</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="rapshonig.jpg" class="card-img-top" alt="Rapshonig">
+                    <div class="card-body">
+                        <h5 class="card-title">Rapshonig</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="bluetencremehonig.jpg" class="card-img-top" alt="Blütencremehonig">
+                    <div class="card-body">
+                        <h5 class="card-title">Blütencremehonig</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="waldhonig.jpg" class="card-img-top" alt="Waldhonig">
+                    <div class="card-body">
+                        <h5 class="card-title">Waldhonig</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <table class="table price-table mt-5">
+            <thead>
+                <tr>
+                    <th>Artikel</th>
+                    <th>Menge/Gewicht</th>
+                    <th>Preis</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Honig, 1kg</td>
+                    <td>1kg</td>
+                    <td>14,00€</td>
+                </tr>
+                <tr>
+                    <td>Honig, 1/2kg</td>
+                    <td>1/2kg</td>
+                    <td>8,00€</td>
+                </tr>
+                <tr>
+                    <td>Honig, 1/4kg</td>
+                    <td>1/4kg</td>
+                    <td>5,00€</td>
+                </tr>
+                <tr>
+                    <td>Propolis Tinktur</td>
+                    <td>20ml</td>
+                    <td>4,90€</td>
+                </tr>
+                <tr>
+                    <td>Propolino Pflegestift</td>
+                    <td>4,8g</td>
+                    <td>3,00€</td>
+                </tr>
+                <tr>
+                    <td>Propolis-Cremen</td>
+                    <td>50g</td>
+                    <td>7,90€</td>
+                </tr>
+                <tr>
+                    <td>Propolis Shampoo</td>
+                    <td>200ml</td>
+                    <td>5,90€</td>
+                </tr>
+                <tr>
+                    <td>Honig Dusch Balsam</td>
+                    <td>200ml</td>
+                    <td>5,90€</td>
+                </tr>
+                <tr>
+                    <td>Propodent Zahncreme</td>
+                    <td>75ml</td>
+                    <td>5,90€</td>
+                </tr>
+                <tr>
+                    <td>Propolis Handcreme</td>
+                    <td>75ml</td>
+                    <td>5,90€</td>
+                </tr>
+                <tr>
+                    <td>Honig Seife</td>
+                    <td>75g</td>
+                    <td>2,90€</td>
+                </tr>
+                <tr>
+                    <td>Honig Propolis Bonbons</td>
+                    <td>100g</td>
+                    <td>2,10€</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
     
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMneT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
