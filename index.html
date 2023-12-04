@@ -61,6 +61,23 @@
         <p>Erfahren Sie mehr über unsere Imkerei, unsere Produkte und die Leidenschaft, die wir in jede Honiggewinnung stecken. Willkommen in der Welt des naturbelassenen Genusses, willkommen bei Imkerei Weissenbacher.</p>
     </div>
 
+    
+    <!-- Hier wird der Seitenzähler angezeigt -->
+    <p id="pageViews">Lade...</p>
+    
+    <script>
+        // JavaScript-Code, um die Seitenaufrufzahl von der Datei zu lesen und anzuzeigen
+        fetch('counter.txt')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("pageViews").innerHTML = "Seitenaufrufe: " + data;
+            })
+            .catch(error => {
+                console.error('Fehler beim Abrufen der Seitenaufrufe:', error);
+                document.getElementById("pageViews").innerHTML = "Fehler beim Abrufen der Seitenaufrufe.";
+            });
+    </script>
+    
     <div class="container mt-5">
         <h2>Kleine Bildgalerie</h2>
         <div class="row">
