@@ -1,4 +1,4 @@
-name: Page View Counter
+name: Increment Page Views
 
 on:
   push:
@@ -6,13 +6,14 @@ on:
       - main
 
 jobs:
-  count-views:
+  increment-counter:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Count page views
+      - name: Increment page views
         run: |
           FILE="counter.txt"
           if [ -f "$FILE" ]; then
@@ -27,8 +28,8 @@ jobs:
         run: |
           git config user.email "action@github.com"
           git config user.name "GitHub Action"
-          git add $FILE
-          git commit -m "Automatische Inkrementierung der Seitenaufrufe"
-          git push --set-upstream origin $GITHUB_REF
+          git add .
+          git diff --quiet && git diff --staged --quiet || git commit -m "Automatische Inkrementierung der Seitenaufrufe"
+          git push origin main
         env:
-          GIT_TOKEN: ${{ secrets.GIT_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
