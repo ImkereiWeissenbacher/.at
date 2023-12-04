@@ -25,8 +25,10 @@ jobs:
 
       - name: Commit changes
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
+          git config user.email "action@github.com"
+          git config user.name "GitHub Action"
           git add $FILE
-          git commit -m "Increment page views"
-          git push
+          git commit -m "Automatische Inkrementierung der Seitenaufrufe"
+          git push --set-upstream origin $GITHUB_REF
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
