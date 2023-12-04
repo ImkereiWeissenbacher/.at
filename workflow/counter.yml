@@ -1,0 +1,32 @@
+name: Page View Counter
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  count-views:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Count page views
+        run: |
+          FILE="counter.txt"
+          if [ -f "$FILE" ]; then
+            COUNT=$(cat $FILE)
+            COUNT=$((COUNT + 1))
+            echo $COUNT > $FILE
+          else
+            echo "1" > $FILE
+          fi
+
+      - name: Commit changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add $FILE
+          git commit -m "Increment page views"
+          git push
