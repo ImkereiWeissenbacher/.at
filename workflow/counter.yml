@@ -31,4 +31,4 @@ jobs:
           git commit -m "Automatische Inkrementierung der Seitenaufrufe"
           git push --set-upstream origin $GITHUB_REF
         env:
-          GIT_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GIT_TOKEN: ${{ secrets.GIT_TOKEN }}
