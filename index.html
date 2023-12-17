@@ -8,6 +8,21 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     -->
+    <script>
+        // JavaScript-Code, um die Seitenaufrufzahl von der Datei zu lesen und anzuzeigen
+        fetch('counter.txt')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("pageViews").innerHTML = "Version: " + data;
+            })
+            .catch(error => {
+                console.error('Fehler beim Abrufen der Seitenaufrufe:', error);
+                document.getElementById("pageViews").innerHTML = "Fehler beim Abrufen der Seitenaufrufe.";
+            });
+    </script>
+
+
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
@@ -176,17 +191,6 @@
   gtag('config', 'G-1909GHGGX8');
 </script>
     
-<script>
-    // JavaScript-Code, um die Seitenaufrufzahl von der Datei zu lesen und anzuzeigen
-    fetch('counter.txt')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById("pageViews").innerHTML = "Version: " + data;
-        })
-        .catch(error => {
-            console.error('Fehler beim Abrufen der Seitenaufrufe:', error);
-            document.getElementById("pageViews").innerHTML = "Fehler beim Abrufen der Seitenaufrufe.";
-        });
-</script>
+
 </body>
 </html>
