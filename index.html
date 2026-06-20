@@ -1,195 +1,109 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="de">
 <head>
-    <!-- Only Options to inser favicons:
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-    -->
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1909GHGGX8"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-    
-      gtag('config', 'G-1909GHGGX8');
-    </script>
-    
-    
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Imkerei Weissenbacher</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <style>
-        body {
-            background-color: #fff8dc; /* Hellgelb */
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        h1 {
-            color: #FFA500;
-        }
-    </style>
-    
-    <link rel="icon" href="favicon-16x16.png" type="image/png">
-    <link rel="shortcut icon" href="favicon-16x16.png" type="image/png">
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Naturbelassener Honig und Bienenprodukte aus der steirischen Waldheimat â€“ mit Sorgfalt geerntet von der Imkerei Weissenbacher.">
+  <meta name="theme-color" content="#254c3b">
+  <title>Imkerei Weissenbacher | Honig aus der Waldheimat</title>
+  <link rel="icon" href="favicon-16x16.png" type="image/png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="stylesheet" href="styles.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1909GHGGX8"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-1909GHGGX8');</script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-                        <img src="three-beehives-in-european-style-dahinter-eine-schne-nadelwaldlandschaft-comiclookmit-viel-schwa.png" alt="Logo" class="navbar-logo" width="50"/> <!-- Hier füge dein Logo-Bild hinzu -->
-            <a class="navbar-brand" href="#">Imkerei Weissenbacher</a>
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="produkte.html">Produkte</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="stockwaage.html">Stockwaage</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="info.html">Info</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="kontakt.html">Kontakt</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+  <a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
+  <header class="site-header">
+    <nav class="container nav" aria-label="Hauptnavigation">
+      <a class="brand" href="index.html">
+        <img src="three-beehives-in-european-style-dahinter-eine-schne-nadelwaldlandschaft-comiclookmit-viel-schwa.png" alt="">
+        <span>Imkerei Weissenbacher</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links"><span class="sr-only">MenÃ¼ Ã¶ffnen</span><span aria-hidden="true">â˜°</span></button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" aria-current="page">Startseite</a></li>
+        <li><a href="produkte.html">Produkte</a></li>
+        <li><a href="stockwaage.html">Stockwaage</a></li>
+        <li><a href="info.html">Wissenswertes</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
     </nav>
+  </header>
 
-    <div class="container">
-        <h1>Willkommen bei Imkerei Weissenbacher - Ihr Zuhause für 100% reinen Naturhonig</h1>
-        <p>Unsere Imkerei erstreckt sich über die malerischen Landschaften der Waldheimat, wo unsere Bienenstöcke sorgfältig an verschiedenen Orten platziert sind. Was unsere Imkerei besonders auszeichnet, ist die unberührte Natur, in der unsere Bienen leben. Hier, inmitten der Waldheimat, gedeihen unsere Bienenvölker in einer Umgebung, die frei von jeglichen Schadstoffen, Spritzmitteln oder anderen Umweltbelastungen ist.</p>
-        <p>Diese einzigartige natürliche Umgebung bietet unseren Bienen die perfekten Bedingungen, um reine, unverfälschte Blütennektare und den charakteristischen Waldhonig zu sammeln. Unser Honig ist daher ein wahres Naturprodukt, das sich durch Reinheit und unverfälschten Geschmack auszeichnet. Von den zarten Blüten der Waldheimat bis zu den Tiefen des Waldes, bieten wir Ihnen Honig in seiner reinsten Form.</p>
-        <p>Wir sind stolz darauf, Ihnen Honig anzubieten, der nicht nur köstlich schmeckt, sondern auch die Liebe und Sorgfalt unserer Bienen für die Natur widerspiegelt. Entdecken Sie die Aromen der unberührten Waldheimat in jedem Glas Imkerei Weissenbacher Honig, sei es der sanfte Geschmack von Blütennektar oder der kräftige Charakter des Waldhonigs.</p>
-        <p>Erfahren Sie mehr über unsere Imkerei, unsere Produkte und die Leidenschaft, die wir in jede Honiggewinnung stecken. Willkommen in der Welt des naturbelassenen Genusses, willkommen bei Imkerei Weissenbacher.</p>
-    </div>
-    
-    <div class="container mt-5">
-        <h2>Kleine Bildgalerie</h2>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="Schnee1Produkte.jpeg" class="card-img-top" alt="Akazienhonig">
-                    <div class="card-body">
-                        <h5 class="card-title">Bauernmarkt Mürzzuschlag</h5>
-                        <p class="card-text">Eine kleine Auswahl unserer Produkte zur Weihnachtszeit.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="Schnee1.jpeg" class="card-img-top" alt="Akazienhonig">
-                    <div class="card-body">
-                        <h5 class="card-title">Bauernmarkt Mürzzuschlag</h5>
-                        <p class="card-text">Egal bei welchen Wetter, wir sind gerne für euch da.(Teil 1)</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="Schnee2.jpeg" class="card-img-top" alt="Akazienhonig">
-                    <div class="card-body">
-                        <h5 class="card-title">Bauernmarkt Mürzzuschlag</h5>
-                        <p class="card-text">Egal bei welchen Wetter, wir sind gerne für euch da.(Teil 2)</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="Schnee3.jpeg" class="card-img-top" alt="Akazienhonig">
-                    <div class="card-body">
-                        <h5 class="card-title">Bauernmarkt Mürzzuschlag</h5>
-                        <p class="card-text">Egal bei welchen Wetter, wir sind gerne für euch da.(Teil 3)</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="Kerzen.jpeg" class="card-img-top" alt="Akazienhonig">
-                    <div class="card-body">
-                        <h5 class="card-title">Weihnachtliche Honiggeschenke</h5>
-                        <p class="card-text">Speziell für die Weihnachtszeit haben wir schön verpackte Geschenke für euch bereit.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="Adventkerzen.jpeg" class="card-img-top" alt="Akazienhonig">
-                    <div class="card-body">
-                        <h5 class="card-title">Adventkerzen</h5>
-                        <p class="card-text">Adventkerzen gibt es bei uns auch wieder.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="Erntezeit.jpeg" class="card-img-top" alt="Lindenblütenhonig">
-                    <div class="card-body">
-                        <h5 class="card-title">Bienen in der Erntezeit</h5>
-                        <p class="card-text">Hohes Treiben bei den Bienen während der Erntezeit.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="Schwarm1.jpeg" class="card-img-top" alt="Lindenblütenhonig">
-                    <div class="card-body">
-                        <h5 class="card-title">Schwarm</h5>
-                        <p class="card-text">Bienenschwarm zieht in den Bienstock ein, Teil 1.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="Schwarm2.jpeg" class="card-img-top" alt="Lindenblütenhonig">
-                    <div class="card-body">
-                        <h5 class="card-title">Schwarm</h5>
-                        <p class="card-text">Bienenschwarm zieht in den Bienstock ein, Teil 2.</p>
-                    </div>
-                </div>
-            </div>
+  <main id="inhalt">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Aus der steirischen Waldheimat</p>
+          <h1>Echter Honig. Ehrlich geerntet.</h1>
+          <p class="hero-copy">Unsere Bienen sammeln dort, wo WÃ¤lder, Wiesen und klare Bergluft zuhause sind. So entsteht naturbelassener Honig mit unverwechselbarem Geschmack.</p>
+          <div class="actions">
+            <a class="button" href="produkte.html">Unsere Produkte</a>
+            <a class="button secondary" href="kontakt.html">Direkt Kontakt aufnehmen</a>
+          </div>
         </div>
+        <img class="hero-image" src="UebersichtProdukte.jpeg" alt="Auswahl an Honig und Bienenprodukten der Imkerei Weissenbacher">
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="intro">
+          <div>
+            <p class="eyebrow">Unsere Imkerei</p>
+            <h2>Mit der Natur, nicht gegen sie</h2>
+          </div>
+          <div class="intro-copy">
+            <p>Unsere BienenstÃ¶cke stehen an ausgewÃ¤hlten PlÃ¤tzen in der Waldheimat. Die abwechslungsreiche Landschaft schenkt den VÃ¶lkern reichhaltige Tracht und unserem Honig seinen besonderen Charakter â€“ von milden BlÃ¼tennoten bis zum krÃ¤ftigen Waldhonig.</p>
+            <p>Jedes Glas steht fÃ¼r sorgfÃ¤ltige Arbeit, kurze Wege und unsere Verbundenheit mit der Region.</p>
+          </div>
+        </div>
+        <div class="features" aria-label="Was unseren Honig auszeichnet">
+          <div class="feature"><strong>Regional verwurzelt</strong>Direkt aus St. Kathrein am Hauenstein.</div>
+          <div class="feature"><strong>Naturbelassen</strong>SorgfÃ¤ltig geerntet und mit Respekt verarbeitet.</div>
+          <div class="feature"><strong>PersÃ¶nlich fÃ¼r Sie da</strong>Beratung und Verkauf direkt bei der Imkerei.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" aria-labelledby="einblicke">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Einblicke</p>
+          <h2 id="einblicke">Aus unserem Imkerjahr</h2>
+          <p>Markttage, Erntezeit und das lebendige Treiben unserer BienenvÃ¶lker.</p>
+        </div>
+        <div class="gallery">
+          <article class="card"><img src="Schnee1Produkte.jpeg" alt="Honigprodukte am winterlichen Bauernmarkt" loading="lazy"><div class="card-body"><h3>Bauernmarkt</h3><p>Eine Auswahl unserer Produkte zur Weihnachtszeit.</p></div></article>
+          <article class="card"><img src="Kerzen.jpeg" alt="Festlich verpackte Honiggeschenke und Kerzen" loading="lazy"><div class="card-body"><h3>Honiggeschenke</h3><p>Liebevoll zusammengestellte Geschenke aus der Imkerei.</p></div></article>
+          <article class="card"><img src="Erntezeit.jpeg" alt="Bienen wÃ¤hrend der Honigernte" loading="lazy"><div class="card-body"><h3>Erntezeit</h3><p>Hochbetrieb am Stock, wenn die Waldheimat blÃ¼ht.</p></div></article>
+          <article class="card"><img src="Schwarm1.jpeg" alt="Bienenschwarm beim Einzug in einen Bienenstock" loading="lazy"><div class="card-body"><h3>Ein neues Volk</h3><p>Ein Bienenschwarm zieht in sein neues Zuhause ein.</p></div></article>
+          <article class="card"><img src="Adventkerzen.jpeg" alt="Handgefertigte Adventkerzen aus Bienenwachs" loading="lazy"><div class="card-body"><h3>Adventkerzen</h3><p>NatÃ¼rlich duftende Kerzen fÃ¼r die ruhige Jahreszeit.</p></div></article>
+          <article class="card"><img src="Waldhonig.jpeg" alt="Glas Waldhonig der Imkerei Weissenbacher" loading="lazy"><div class="card-body"><h3>Waldhonig</h3><p>KrÃ¤ftig, dunkel und typisch fÃ¼r unsere Heimat.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container cta">
+        <div><p class="eyebrow">Lust auf Waldheimat im Glas?</p><h2>Besuchen oder anrufen</h2><p>Wir beraten Sie gerne persÃ¶nlich zu unseren Honig- und Bienenprodukten.</p></div>
+        <a class="button" href="kontakt.html">Kontakt &amp; Anfahrt</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <p><strong>Imkerei Weissenbacher</strong><br>8672 St. Kathrein am Hauenstein</p>
+      <p><a href="produkte.html">Produkte</a> Â· <a href="kontakt.html">Kontakt</a></p>
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-
-    <!-- Hier wird der Seitenzähler angezeigt -->
-<p id="pageViews">Lade...</p>
-    
-    <script>
-        // JavaScript-Code, um die Seitenaufrufzahl von der Datei zu lesen und anzuzeigen
-        fetch('counter.txt')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById("pageViews").innerHTML = "Version: " + data;
-            })
-            .catch(error => {
-                console.error('Fehler beim Abrufen der Seitenaufrufe:', error);
-                document.getElementById("pageViews").innerHTML = "Fehler beim Abrufen der Seitenaufrufe.";
-            });
-    </script>
-    
-
+    <div class="container"><p class="version" id="version">Honig aus der Waldheimat</p></div>
+  </footer>
+  <script>
+    const toggle=document.querySelector('.nav-toggle'),menu=document.querySelector('.nav-links');
+    toggle.addEventListener('click',()=>{const open=toggle.getAttribute('aria-expanded')==='true';toggle.setAttribute('aria-expanded',String(!open));toggle.querySelector('[aria-hidden]').textContent=open?'â˜°':'âœ•';menu.classList.toggle('is-open',!open)});
+    fetch('counter.txt').then(r=>r.ok?r.text():Promise.reject()).then(v=>document.getElementById('version').textContent='Version '+v.trim()+' Â· Honig aus der Waldheimat').catch(()=>{});
+  </script>
 </body>
 </html>
