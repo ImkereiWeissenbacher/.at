@@ -63,6 +63,24 @@ h2 { margin-bottom: 1rem; font-family: Georgia, serif; font-size: clamp(2rem, 4v
 .button:hover { background: #ffd778; transform: translateY(-1px); }
 .button.secondary { border-color: rgba(255,255,255,.5); background: transparent; color: #fff; }
 
+.page-hero { padding: clamp(3.5rem, 7vw, 6rem) 0; }
+.page-hero h1 { font-size: clamp(2.5rem, 5vw, 4.4rem); }
+.page-hero .hero-image { aspect-ratio: 16 / 11; }
+.product-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1.2rem; }
+.product-card { overflow: hidden; background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); }
+.product-card img { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; }
+.product-card-body { padding: 1.1rem 1.2rem 1.25rem; }
+.product-card h3 { margin: 0; font-size: 1.15rem; letter-spacing: -.02em; }
+.product-tag { display: inline-block; margin-bottom: .45rem; color: var(--honey); font-size: .75rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
+.price-wrap { overflow: hidden; background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); }
+.price-table { width: 100%; border-collapse: collapse; }
+.price-table th, .price-table td { padding: 1rem 1.2rem; text-align: left; border-bottom: 1px solid var(--line); }
+.price-table th { background: var(--forest); color: #fff; font-size: .82rem; letter-spacing: .08em; text-transform: uppercase; }
+.price-table tbody tr:last-child td { border-bottom: 0; }
+.price-table tbody tr:hover { background: #fff8e8; }
+.price-table td:last-child { color: var(--forest-dark); font-weight: 800; white-space: nowrap; }
+.price-note { margin-top: 1rem; color: var(--muted); font-size: .94rem; }
+
 .section { padding: clamp(4rem, 8vw, 7rem) 0; }
 .section.alt { background: #f6eddb; }
 .intro { display: grid; grid-template-columns: .8fr 1.2fr; gap: clamp(2rem, 7vw, 6rem); align-items: start; }
@@ -96,11 +114,23 @@ h2 { margin-bottom: 1rem; font-family: Georgia, serif; font-size: clamp(2rem, 4v
   .hero-grid, .intro { grid-template-columns: 1fr; }
   .hero-image { max-width: 560px; transform: none; }
   .features, .gallery { grid-template-columns: repeat(2, 1fr); }
+  .product-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 @media (max-width: 560px) {
   .brand span { font-size: .95rem; }
   .hero { padding-top: 3.2rem; }
   .features, .gallery { grid-template-columns: 1fr; }
+  .product-grid { grid-template-columns: 1fr 1fr; gap: .75rem; }
+  .product-card-body { padding: .85rem; }
+  .product-card h3 { font-size: 1rem; }
+  .price-wrap { overflow: visible; background: transparent; border: 0; box-shadow: none; }
+  .price-table, .price-table tbody { display: grid; gap: .8rem; }
+  .price-table thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); }
+  .price-table tr { display: grid; grid-template-columns: 1fr auto; padding: 1rem; background: var(--paper); border: 1px solid var(--line); border-radius: 16px; box-shadow: 0 8px 22px rgba(36,52,43,.06); }
+  .price-table td { display: block; padding: 0; border: 0; }
+  .price-table td:first-child { grid-column: 1 / -1; margin-bottom: .35rem; color: var(--forest-dark); font-weight: 800; }
+  .price-table td:nth-child(2) { color: var(--muted); }
+  .price-table td:last-child { text-align: right; }
   .cta, .footer-row { align-items: flex-start; flex-direction: column; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
